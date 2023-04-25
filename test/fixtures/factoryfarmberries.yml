@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kg: 1
+  season: MyString
+  coffeberries: one
+  factoryfarms: one
+
+two:
+  kg: 1
+  season: MyString
+  coffeberries: two
+  factoryfarms: two

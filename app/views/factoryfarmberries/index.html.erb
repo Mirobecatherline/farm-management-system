@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Factoryfarmberries</h1>
+
+<div id="factoryfarmberries">
+  <% @factoryfarmberries.each do |factoryfarmberry| %>
+    <%= render factoryfarmberry %>
+    <p>
+      <%= link_to "Show this factoryfarmberry", factoryfarmberry %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New factoryfarmberry", new_factoryfarmberry_path %>

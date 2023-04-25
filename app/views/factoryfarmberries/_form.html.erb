@@ -1,0 +1,37 @@
+<%= form_with(model: factoryfarmberry) do |form| %>
+  <% if factoryfarmberry.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(factoryfarmberry.errors.count, "error") %> prohibited this factoryfarmberry from being saved:</h2>
+
+      <ul>
+        <% factoryfarmberry.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :kg, style: "display: block" %>
+    <%= form.number_field :kg %>
+  </div>
+
+  <div>
+    <%= form.label :season, style: "display: block" %>
+    <%= form.text_field :season %>
+  </div>
+
+  <div>
+    <%= form.label :coffeberries_id, style: "display: block" %>
+    <%= form.text_field :coffeberries_id %>
+  </div>
+
+  <div>
+    <%= form.label :factoryfarms_id, style: "display: block" %>
+    <%= form.text_field :factoryfarms_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

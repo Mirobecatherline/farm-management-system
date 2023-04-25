@@ -1,0 +1,2 @@
+module FactoryfarmsHelper
+end
